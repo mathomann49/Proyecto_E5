@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/*: root {
+
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: black;
+}
+
+section {
+    padding: 70px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    gap: 20px;
+}
+.item {
+    width: 282px;
+    height: 213px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item img {
+    width: 237px;
+    height: 97px;
+    border-radius: 16px;
+}
+
+.info-top {
+    display: flex;
+    flex-direction: column;
+}
+.info-top span {
+    font-size: 15px;
+    font-weight: 500;
+}
+.info-top p {
+    font-size: 14px;
+    font-weight: 400;
+    color:#FFFFFF;
+    opacity: 30%;
+}
+
+.info-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-bottom p { 
+    font-size: 19px;
+    font-weight: 700;
+    background: linear-gradient(to right, #FFA100
+, #FF005C);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.info-bottom a {
+    background: linear-gradient(to right, #FFA100
+    , #FF005C);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 0px;
+    width: 86px;
+    border-radius: 17px;
+    font-size: 12px;
+    font-weight: 600;
+}
