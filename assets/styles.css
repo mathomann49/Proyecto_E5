@@ -3,6 +3,8 @@
 /*: root {
 
 }*/
+
+/*estilado general con el selector universal*/
 * {
     margin: 0;
     padding: 0;
@@ -11,22 +13,23 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+/* estilado del fondo del body*/
 body {
     background: black;
 }
-
+/*estilado de la seccion donde aparecen las pizzas*/
 section {
     padding: 70px;
     background: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: white;
     width: 100%;
     gap: 20px;
 }
+/* estilado general de cada una de las pizzas*/
 .item {
     width: 282px;
     height: 213px;
@@ -38,13 +41,20 @@ section {
     justify-content: center;
     gap: 20px;
 }
-
+/*estilado de las imagenes de las pizzas*/
 .item img {
     width: 237px;
     height: 97px;
     border-radius: 16px;
 }
+.item img {
+    transition: transform 0,5;
+}
 
+.item img:hover{
+    transform: scale(1.2);
+}
+/* estilado de la informacion que aparece debajo de las imagenes de las pizzas*/
 .info-top {
     display: flex;
     flex-direction: column;
